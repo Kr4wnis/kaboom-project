@@ -15,7 +15,7 @@ loadSpriteAtlas("sprites/sprites.png",
     "sliceY": 8,
     anims: {
       empty: 0,
-      popup: { from: 1, to: 5, speed: 4, loop: false, },
+      popup: { from: 1, to: 5, speed: 1, loop: false, },
     },
   },
 });
@@ -24,12 +24,12 @@ scene("game", () => {
 
 for (let n = 0; n < 5; n++) {
   for (let i = 0; i < 3; i++) {
-    Rad
     add([ sprite("hole"), 
     anchor("center"),
     "hole", 
     pos(150+width()/7.5*n, 100+height()/4.5*i), 
-    {anim: "popup"} ]);
+    {anim: "popup"} 
+  ]);
   }
 }
 
